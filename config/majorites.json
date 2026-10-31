@@ -1,0 +1,65 @@
+{
+  "_commentaire": "Familles politiques (voir config/groupes.json) membres de la majorité gouvernementale, par période. Choix éditorial : un parti est compté dans la majorité quand il participe au gouvernement en tant que parti. LR a participé aux gouvernements Barnier, Bayrou et Lecornu I, puis a refusé d'entrer dans le gouvernement Lecornu II (12 octobre 2025) : il en sort à cette date. Les périodes postérieures sont à vérifier à chaque mise à jour.",
+  "periodes": [
+    {
+      "debut": "2012-05-16",
+      "fin": "2014-04-01",
+      "gouvernements": "Ayrault",
+      "familles": [
+        "PS",
+        "RRDP",
+        "ECO"
+      ]
+    },
+    {
+      "debut": "2014-04-02",
+      "fin": "2017-05-14",
+      "gouvernements": "Valls, Cazeneuve",
+      "familles": [
+        "PS",
+        "RRDP"
+      ]
+    },
+    {
+      "debut": "2017-05-15",
+      "fin": "2022-05-15",
+      "gouvernements": "Philippe, Castex",
+      "familles": [
+        "REN",
+        "MODEM",
+        "HOR"
+      ]
+    },
+    {
+      "debut": "2022-05-16",
+      "fin": "2024-09-20",
+      "gouvernements": "Borne, Attal",
+      "familles": [
+        "REN",
+        "MODEM",
+        "HOR"
+      ]
+    },
+    {
+      "debut": "2024-09-21",
+      "fin": "2025-10-11",
+      "gouvernements": "Barnier, Bayrou, Lecornu I",
+      "familles": [
+        "REN",
+        "MODEM",
+        "HOR",
+        "LR"
+      ]
+    },
+    {
+      "debut": "2025-10-12",
+      "fin": null,
+      "gouvernements": "Lecornu II et suivants",
+      "familles": [
+        "REN",
+        "MODEM",
+        "HOR"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "_commentaire": "Chaque thème est un axe à deux pôles, décrits chacun dans ses propres termes. Un texte classé dans un thème indique vers quel pôle il va (ou « mixte »). L'ordre des pôles est arbitraire : aucun n'est présenté comme préférable, et le tableau de bord ne leur associe pas de couleur.",
+  "themes": [
+    { "id": "Fiscalité", "poles": [
+      { "id": "progressivite", "court": "plus de progressivité", "label": "accroît les prélèvements ou leur progressivité (charge plus forte sur les hauts revenus ou patrimoines)" },
+      { "id": "allegement", "court": "allègement", "label": "réduit les prélèvements ou leur progressivité" } ] },
+    { "id": "Travail", "poles": [
+      { "id": "protection", "court": "protection des salariés", "label": "renforce les protections et les droits collectifs des salariés" },
+      { "id": "flexibilite", "court": "flexibilité", "label": "accroît la flexibilité et la liberté contractuelle des employeurs" } ] },
+    { "id": "Retraites", "poles": [
+      { "id": "droits", "court": "droits étendus", "label": "étend les droits à la retraite (âge de départ, durée de cotisation, niveau des pensions)" },
+      { "id": "equilibre", "court": "équilibre financier", "label": "restreint ces droits pour l'équilibre financier du système" } ] },
+    { "id": "Protection sociale", "poles": [
+      { "id": "extension", "court": "extension", "label": "étend les prestations sociales ou leur accès" },
+      { "id": "conditions", "court": "maîtrise et conditions", "label": "restreint les prestations, en durcit les conditions ou en renforce le contrôle et les contreparties" } ] },
+    { "id": "Santé", "poles": [
+      { "id": "acces", "court": "accès et prise en charge", "label": "élargit l'accès aux soins ou leur prise en charge collective" },
+      { "id": "maitrise", "court": "maîtrise de la dépense", "label": "maîtrise la dépense de santé, au prix d'un accès ou d'une prise en charge réduits" } ] },
+    { "id": "Logement", "poles": [
+      { "id": "locataires", "court": "locataires et régulation", "label": "renforce les droits des locataires ou la régulation du marché du logement" },
+      { "id": "proprietaires", "court": "propriétaires et marché", "label": "renforce les droits des propriétaires ou la liberté du marché du logement" } ] },
+    { "id": "Environnement", "poles": [
+      { "id": "normes", "court": "normes renforcées", "label": "renforce les normes, objectifs ou contraintes environnementales" },
+      { "id": "activite", "court": "contraintes allégées", "label": "allège ces contraintes au profit de l'activité économique ou des usages" } ] },
+    { "id": "Immigration", "poles": [
+      { "id": "ouverture", "court": "ouverture", "label": "élargit les droits des personnes étrangères ou l'accès au séjour et à la nationalité" },
+      { "id": "controle", "court": "contrôle", "label": "renforce le contrôle des flux migratoires ou les conditions d'accès au séjour et à la nationalité" } ] },
+    { "id": "Sécurité & justice", "poles": [
+      { "id": "libertes", "court": "libertés", "label": "renforce les libertés publiques et les droits de la défense" },
+      { "id": "securite", "court": "sécurité", "label": "renforce les pouvoirs de police, de surveillance ou de sanction" } ] },
+    { "id": "Services publics", "poles": [
+      { "id": "moyens", "court": "plus de moyens", "label": "accroît les moyens, les effectifs ou la présence des services publics" },
+      { "id": "economies", "court": "économies et ouverture", "label": "réduit leur coût ou les ouvre à la concurrence ou au secteur privé" } ] }
+  ],
+  "effets": [
+    { "id": "modestes", "label": "Progressif", "detail": "Gain direct pour les ménages modestes, ou charge directe accrue pour les plus aisés" },
+    { "id": "aises", "label": "Régressif", "detail": "Gain direct pour les ménages aisés, ou perte directe pour les plus modestes" },
+    { "id": "entreprises", "label": "Vers les entreprises", "detail": "Gain direct pour les entreprises et leurs détenteurs : allègements, aides, moindres obligations" },
+    { "id": "neutre", "label": "Neutre", "detail": "Pas de transfert direct de ressources notable" },
+    { "id": "ambivalent", "label": "Ambivalent", "detail": "Transferts notables dans des sens opposés, sans dominante" },
+    { "id": "incertain", "label": "Incertain", "detail": "Documents insuffisants pour trancher" }
+  ]
+}

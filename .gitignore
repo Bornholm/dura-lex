@@ -1,0 +1,5 @@
+# Données de travail, régénérables avec les scripts (archives, documents, contexte, journaux)
+/data/
+__pycache__/
+*.tmp
+web/_check.html

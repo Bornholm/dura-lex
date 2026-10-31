@@ -1,0 +1,987 @@
+{
+ "extrait_le": "2026-10-31",
+ "blocs": [
+  {
+   "id": "Gauche",
+   "couleur": "#B4232A"
+  },
+  {
+   "id": "Centre",
+   "couleur": "#E2A33B"
+  },
+  {
+   "id": "Droite",
+   "couleur": "#5B86C4"
+  },
+  {
+   "id": "Extrême droite",
+   "couleur": "#26295A"
+  },
+  {
+   "id": "Non alignés",
+   "couleur": "#8D949A"
+  }
+ ],
+ "familles": [
+  {
+   "id": "LFI",
+   "nom": "La France insoumise",
+   "bloc": "Gauche",
+   "couleur": "#C00D0D"
+  },
+  {
+   "id": "GDR",
+   "nom": "Gauche démocrate et républicaine",
+   "bloc": "Gauche",
+   "couleur": "#A41914"
+  },
+  {
+   "id": "ECO",
+   "nom": "Écologistes",
+   "bloc": "Gauche",
+   "couleur": "#77AA79"
+  },
+  {
+   "id": "PS",
+   "nom": "Socialistes",
+   "bloc": "Gauche",
+   "couleur": "#E26BA8"
+  },
+  {
+   "id": "RRDP",
+   "nom": "Radicaux de gauche",
+   "bloc": "Gauche",
+   "couleur": "#E8B04B"
+  },
+  {
+   "id": "REN",
+   "nom": "Renaissance (LREM, RE, EPR)",
+   "bloc": "Centre",
+   "couleur": "#7B4591"
+  },
+  {
+   "id": "MODEM",
+   "nom": "MoDem",
+   "bloc": "Centre",
+   "couleur": "#F07E26"
+  },
+  {
+   "id": "HOR",
+   "nom": "Horizons et Agir",
+   "bloc": "Centre",
+   "couleur": "#32B3CA"
+  },
+  {
+   "id": "UDI",
+   "nom": "UDI et centristes",
+   "bloc": "Centre",
+   "couleur": "#94B7E1"
+  },
+  {
+   "id": "LR",
+   "nom": "Les Républicains (UMP, LR, DR)",
+   "bloc": "Droite",
+   "couleur": "#2B4C9B"
+  },
+  {
+   "id": "RN",
+   "nom": "Rassemblement national",
+   "bloc": "Extrême droite",
+   "couleur": "#313567"
+  },
+  {
+   "id": "UDR",
+   "nom": "Union des droites (AD, UDR)",
+   "bloc": "Extrême droite",
+   "couleur": "#3367A7"
+  },
+  {
+   "id": "LIOT",
+   "nom": "LIOT et Libertés et territoires",
+   "bloc": "Non alignés",
+   "couleur": "#E5BE3C"
+  },
+  {
+   "id": "NI",
+   "nom": "Non inscrits",
+   "bloc": "Non alignés",
+   "couleur": "#8D949A"
+  }
+ ],
+ "themes": [
+  {
+   "id": "Fiscalité",
+   "poles": [
+    {
+     "id": "progressivite",
+     "court": "plus de progressivité",
+     "label": "accroît les prélèvements ou leur progressivité (charge plus forte sur les hauts revenus ou patrimoines)"
+    },
+    {
+     "id": "allegement",
+     "court": "allègement",
+     "label": "réduit les prélèvements ou leur progressivité"
+    }
+   ]
+  },
+  {
+   "id": "Travail",
+   "poles": [
+    {
+     "id": "protection",
+     "court": "protection des salariés",
+     "label": "renforce les protections et les droits collectifs des salariés"
+    },
+    {
+     "id": "flexibilite",
+     "court": "flexibilité",
+     "label": "accroît la flexibilité et la liberté contractuelle des employeurs"
+    }
+   ]
+  },
+  {
+   "id": "Retraites",
+   "poles": [
+    {
+     "id": "droits",
+     "court": "droits étendus",
+     "label": "étend les droits à la retraite (âge de départ, durée de cotisation, niveau des pensions)"
+    },
+    {
+     "id": "equilibre",
+     "court": "équilibre financier",
+     "label": "restreint ces droits pour l'équilibre financier du système"
+    }
+   ]
+  },
+  {
+   "id": "Protection sociale",
+   "poles": [
+    {
+     "id": "extension",
+     "court": "extension",
+     "label": "étend les prestations sociales ou leur accès"
+    },
+    {
+     "id": "conditions",
+     "court": "maîtrise et conditions",
+     "label": "restreint les prestations, en durcit les conditions ou en renforce le contrôle et les contreparties"
+    }
+   ]
+  },
+  {
+   "id": "Santé",
+   "poles": [
+    {
+     "id": "acces",
+     "court": "accès et prise en charge",
+     "label": "élargit l'accès aux soins ou leur prise en charge collective"
+    },
+    {
+     "id": "maitrise",
+     "court": "maîtrise de la dépense",
+     "label": "maîtrise la dépense de santé, au prix d'un accès ou d'une prise en charge réduits"
+    }
+   ]
+  },
+  {
+   "id": "Logement",
+   "poles": [
+    {
+     "id": "locataires",
+     "court": "locataires et régulation",
+     "label": "renforce les droits des locataires ou la régulation du marché du logement"
+    },
+    {
+     "id": "proprietaires",
+     "court": "propriétaires et marché",
+     "label": "renforce les droits des propriétaires ou la liberté du marché du logement"
+    }
+   ]
+  },
+  {
+   "id": "Environnement",
+   "poles": [
+    {
+     "id": "normes",
+     "court": "normes renforcées",
+     "label": "renforce les normes, objectifs ou contraintes environnementales"
+    },
+    {
+     "id": "activite",
+     "court": "contraintes allégées",
+     "label": "allège ces contraintes au profit de l'activité économique ou des usages"
+    }
+   ]
+  },
+  {
+   "id": "Immigration",
+   "poles": [
+    {
+     "id": "ouverture",
+     "court": "ouverture",
+     "label": "élargit les droits des personnes étrangères ou l'accès au séjour et à la nationalité"
+    },
+    {
+     "id": "controle",
+     "court": "contrôle",
+     "label": "renforce le contrôle des flux migratoires ou les conditions d'accès au séjour et à la nationalité"
+    }
+   ]
+  },
+  {
+   "id": "Sécurité & justice",
+   "poles": [
+    {
+     "id": "libertes",
+     "court": "libertés",
+     "label": "renforce les libertés publiques et les droits de la défense"
+    },
+    {
+     "id": "securite",
+     "court": "sécurité",
+     "label": "renforce les pouvoirs de police, de surveillance ou de sanction"
+    }
+   ]
+  },
+  {
+   "id": "Services publics",
+   "poles": [
+    {
+     "id": "moyens",
+     "court": "plus de moyens",
+     "label": "accroît les moyens, les effectifs ou la présence des services publics"
+    },
+    {
+     "id": "economies",
+     "court": "économies et ouverture",
+     "label": "réduit leur coût ou les ouvre à la concurrence ou au secteur privé"
+    }
+   ]
+  }
+ ],
+ "effets": [
+  {
+   "id": "modestes",
+   "label": "Progressif",
+   "detail": "Gain direct pour les ménages modestes, ou charge directe accrue pour les plus aisés"
+  },
+  {
+   "id": "aises",
+   "label": "Régressif",
+   "detail": "Gain direct pour les ménages aisés, ou perte directe pour les plus modestes"
+  },
+  {
+   "id": "entreprises",
+   "label": "Vers les entreprises",
+   "detail": "Gain direct pour les entreprises et leurs détenteurs : allègements, aides, moindres obligations"
+  },
+  {
+   "id": "neutre",
+   "label": "Neutre",
+   "detail": "Pas de transfert direct de ressources notable"
+  },
+  {
+   "id": "ambivalent",
+   "label": "Ambivalent",
+   "detail": "Transferts notables dans des sens opposés, sans dominante"
+  },
+  {
+   "id": "incertain",
+   "label": "Incertain",
+   "detail": "Documents insuffisants pour trancher"
+  }
+ ],
+ "majorites": [
+  {
+   "debut": "2012-05-16",
+   "fin": "2014-04-01",
+   "gouvernements": "Ayrault",
+   "familles": [
+    "PS",
+    "RRDP",
+    "ECO"
+   ]
+  },
+  {
+   "debut": "2014-04-02",
+   "fin": "2017-05-14",
+   "gouvernements": "Valls, Cazeneuve",
+   "familles": [
+    "PS",
+    "RRDP"
+   ]
+  },
+  {
+   "debut": "2017-05-15",
+   "fin": "2022-05-15",
+   "gouvernements": "Philippe, Castex",
+   "familles": [
+    "REN",
+    "MODEM",
+    "HOR"
+   ]
+  },
+  {
+   "debut": "2022-05-16",
+   "fin": "2024-09-20",
+   "gouvernements": "Borne, Attal",
+   "familles": [
+    "REN",
+    "MODEM",
+    "HOR"
+   ]
+  },
+  {
+   "debut": "2024-09-21",
+   "fin": "2025-10-11",
+   "gouvernements": "Barnier, Bayrou, Lecornu I",
+   "familles": [
+    "REN",
+    "MODEM",
+    "HOR",
+    "LR"
+   ]
+  },
+  {
+   "debut": "2025-10-12",
+   "fin": null,
+   "gouvernements": "Lecornu II et suivants",
+   "familles": [
+    "REN",
+    "MODEM",
+    "HOR"
+   ]
+  }
+ ],
+ "protocole": {
+  "version": 4,
+  "fixe_le": "2026-10-31",
+  "classement": {
+   "modeles": [
+    "openrouter/deepseek/deepseek-v4.1-flash",
+    "openrouter/mistralai/mistral-small-2603",
+    "openrouter/google/gemini-3.5-flash-lite"
+   ],
+   "passages_par_modele": 1,
+   "agregation": "Effet retenu s'il est proposé par une majorité stricte des modèles, sinon « incertain ». Thème retenu s'il est proposé par une majorité des modèles, avec le pôle majoritaire, sinon « mixte ».",
+   "anonymisation": "Noms de personnes, noms de groupes et de partis, nature du texte (projet ou proposition) et date masqués avant l'envoi au modèle."
+  },
+  "indice": {
+   "textes_clivants_uniquement": true,
+   "seuil_clivant": 0.25,
+   "budgets": false,
+   "effets_progressifs": [
+    "modestes"
+   ],
+   "effets_regressifs": [
+    "aises",
+    "entreprises"
+   ],
+   "confiance_minimale": "faible",
+   "textes_minimum": 5,
+   "reechantillonnages": 1000,
+   "niveau_intervalle": 0.95
+  }
+ },
+ "legislatures": {
+  "XIV": {
+   "periode": "2012–2017",
+   "scrutins": 1354,
+   "ensemble": 117,
+   "votes_nominatifs": 185376,
+   "groupes": [
+    {
+     "id": "PO656018",
+     "abrev": "GDR",
+     "nom": "Gauche démocrate et républicaine",
+     "couleur": "#A41914",
+     "famille": "GDR",
+     "bloc": "Gauche",
+     "sieges": 15,
+     "debut": "2012-06-26",
+     "fin": "2017-06-20"
+    },
+    {
+     "id": "PO656014",
+     "abrev": "ECOLO",
+     "nom": "Écologiste",
+     "couleur": "#77AA79",
+     "famille": "ECO",
+     "bloc": "Gauche",
+     "sieges": 16,
+     "debut": "2012-06-26",
+     "fin": "2016-05-19"
+    },
+    {
+     "id": "PO656002",
+     "abrev": "SRC",
+     "nom": "Socialiste, républicain et citoyen",
+     "couleur": "#D46CA9",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 291,
+     "debut": "2012-06-26",
+     "fin": "2016-05-24"
+    },
+    {
+     "id": "PO713077",
+     "abrev": "SER",
+     "nom": "Socialiste, écologiste et républicain",
+     "couleur": "#D46CA9",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 288,
+     "debut": "2016-05-25",
+     "fin": "2017-06-20"
+    },
+    {
+     "id": "PO656022",
+     "abrev": "RRDP",
+     "nom": "Radical, républicain, démocrate et progressiste",
+     "couleur": "#E8B04B",
+     "famille": "RRDP",
+     "bloc": "Gauche",
+     "sieges": 18,
+     "debut": "2012-06-26",
+     "fin": "2017-06-20"
+    },
+    {
+     "id": "PO656010",
+     "abrev": "UDI",
+     "nom": "Union des démocrates et indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 27,
+     "debut": "2012-06-26",
+     "fin": "2017-06-20"
+    },
+    {
+     "id": "PO707869",
+     "abrev": "LES-REP",
+     "nom": "Les Républicains",
+     "couleur": "#2B4C9B",
+     "famille": "LR",
+     "bloc": "Droite",
+     "sieges": 199,
+     "debut": "2015-06-02",
+     "fin": "2017-06-20"
+    },
+    {
+     "id": "PO656006",
+     "abrev": "UMP",
+     "nom": "Union pour un Mouvement Populaire",
+     "couleur": "#2B4C9B",
+     "famille": "LR",
+     "bloc": "Droite",
+     "sieges": 198,
+     "debut": "2012-06-26",
+     "fin": "2015-06-01"
+    },
+    {
+     "id": "PO645633",
+     "abrev": "NI",
+     "nom": "Non inscrit",
+     "couleur": "#8D949A",
+     "famille": "NI",
+     "bloc": "Non alignés",
+     "sieges": 26,
+     "debut": "2012-06-20",
+     "fin": "2017-06-20"
+    }
+   ]
+  },
+  "XV": {
+   "periode": "2017–2022",
+   "scrutins": 4417,
+   "ensemble": 376,
+   "votes_nominatifs": 465028,
+   "groupes": [
+    {
+     "id": "PO730958",
+     "abrev": "FI",
+     "nom": "La France insoumise",
+     "couleur": "#ED302C",
+     "famille": "LFI",
+     "bloc": "Gauche",
+     "sieges": 17,
+     "debut": "2017-06-27",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO730940",
+     "abrev": "GDR",
+     "nom": "Gauche démocrate et républicaine",
+     "couleur": "#A41914",
+     "famille": "GDR",
+     "bloc": "Gauche",
+     "sieges": 15,
+     "debut": "2017-06-27",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO771789",
+     "abrev": "EDS",
+     "nom": "Écologie Démocratie Solidarité",
+     "couleur": "#3A673E",
+     "famille": "ECO",
+     "bloc": "Gauche",
+     "sieges": 15,
+     "debut": "2020-05-20",
+     "fin": "2020-10-16"
+    },
+    {
+     "id": "PO730946",
+     "abrev": "NG",
+     "nom": "Nouvelle Gauche",
+     "couleur": "#D46CA9",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 30,
+     "debut": "2017-06-27",
+     "fin": "2018-09-11"
+    },
+    {
+     "id": "PO758835",
+     "abrev": "SOC",
+     "nom": "Socialistes et apparentés",
+     "couleur": "#D46CA9",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 28,
+     "debut": "2018-09-12",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO730964",
+     "abrev": "LAREM",
+     "nom": "La République en Marche",
+     "couleur": "#702A82",
+     "famille": "REN",
+     "bloc": "Centre",
+     "sieges": 268,
+     "debut": "2017-06-27",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO774834",
+     "abrev": "DEM",
+     "nom": "Mouvement Démocrate (MoDem) et Démocrates apparentés",
+     "couleur": "#F26D22",
+     "famille": "MODEM",
+     "bloc": "Centre",
+     "sieges": 57,
+     "debut": "2020-09-24",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO730970",
+     "abrev": "MODEM",
+     "nom": "Mouvement Démocrate et apparentés",
+     "couleur": "#F26D22",
+     "famille": "MODEM",
+     "bloc": "Centre",
+     "sieges": 53,
+     "debut": "2017-06-27",
+     "fin": "2020-09-23"
+    },
+    {
+     "id": "PO771923",
+     "abrev": "AGIR-E",
+     "nom": "Agir ensemble",
+     "couleur": "#C7C034",
+     "famille": "HOR",
+     "bloc": "Centre",
+     "sieges": 22,
+     "debut": "2020-05-27",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO730952",
+     "abrev": "LC",
+     "nom": "Les Constructifs : républicains, UDI, indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 35,
+     "debut": "2017-06-27",
+     "fin": "2017-11-28"
+    },
+    {
+     "id": "PO744425",
+     "abrev": "UDI-AGIR",
+     "nom": "UDI, Agir et Indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 29,
+     "debut": "2017-11-29",
+     "fin": "2019-06-10"
+    },
+    {
+     "id": "PO765636",
+     "abrev": "UDI-I",
+     "nom": "UDI et Indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 28,
+     "debut": "2019-06-11",
+     "fin": "2019-09-27"
+    },
+    {
+     "id": "PO767217",
+     "abrev": "UDI-A-I",
+     "nom": "UDI, Agir et Indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 27,
+     "debut": "2019-09-28",
+     "fin": "2020-05-25"
+    },
+    {
+     "id": "PO771889",
+     "abrev": "UDI_I",
+     "nom": "UDI et Indépendants",
+     "couleur": "#94B7E1",
+     "famille": "UDI",
+     "bloc": "Centre",
+     "sieges": 19,
+     "debut": "2020-05-26",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO730934",
+     "abrev": "LR",
+     "nom": "Les Républicains",
+     "couleur": "#1C2EFA",
+     "famille": "LR",
+     "bloc": "Droite",
+     "sieges": 101,
+     "debut": "2017-06-27",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO759900",
+     "abrev": "LT",
+     "nom": "Libertés et Territoires",
+     "couleur": "#66BF74",
+     "famille": "LIOT",
+     "bloc": "Non alignés",
+     "sieges": 18,
+     "debut": "2018-10-18",
+     "fin": "2022-06-21"
+    },
+    {
+     "id": "PO723569",
+     "abrev": "NI",
+     "nom": "Non inscrit",
+     "couleur": "#8D949A",
+     "famille": "NI",
+     "bloc": "Non alignés",
+     "sieges": 23,
+     "debut": "2017-06-21",
+     "fin": "2022-06-21"
+    }
+   ]
+  },
+  "XVI": {
+   "periode": "2022–2024",
+   "scrutins": 4106,
+   "ensemble": 221,
+   "votes_nominatifs": 599826,
+   "groupes": [
+    {
+     "id": "PO800490",
+     "abrev": "LFI-NUPES",
+     "nom": "La France insoumise - Nouvelle Union Populaire écologique et sociale",
+     "couleur": "#E42313",
+     "famille": "LFI",
+     "bloc": "Gauche",
+     "sieges": 75,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800502",
+     "abrev": "GDR-NUPES",
+     "nom": "Gauche démocrate et républicaine - NUPES",
+     "couleur": "#991414",
+     "famille": "GDR",
+     "bloc": "Gauche",
+     "sieges": 22,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800526",
+     "abrev": "ECOLO",
+     "nom": "Écologiste - NUPES",
+     "couleur": "#77AA79",
+     "famille": "ECO",
+     "bloc": "Gauche",
+     "sieges": 21,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800496",
+     "abrev": "SOC",
+     "nom": "Socialistes et apparentés (membre de l’intergroupe NUPES)",
+     "couleur": "#DF84B5",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 31,
+     "debut": "2022-06-28",
+     "fin": "2023-10-18"
+    },
+    {
+     "id": "PO830170",
+     "abrev": "SOC-A",
+     "nom": "Socialistes et apparentés",
+     "couleur": "#DF84B5",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 31,
+     "debut": "2023-10-19",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800538",
+     "abrev": "RE",
+     "nom": "Renaissance",
+     "couleur": "#61468F",
+     "famille": "REN",
+     "bloc": "Centre",
+     "sieges": 169,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800484",
+     "abrev": "DEM",
+     "nom": "Démocrate (MoDem et Indépendants)",
+     "couleur": "#CE5215",
+     "famille": "MODEM",
+     "bloc": "Centre",
+     "sieges": 50,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800514",
+     "abrev": "HOR",
+     "nom": "Horizons et apparentés",
+     "couleur": "#32B3CA",
+     "famille": "HOR",
+     "bloc": "Centre",
+     "sieges": 31,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800508",
+     "abrev": "LR",
+     "nom": "Les Républicains",
+     "couleur": "#4565AD",
+     "famille": "LR",
+     "bloc": "Droite",
+     "sieges": 61,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800520",
+     "abrev": "RN",
+     "nom": "Rassemblement National",
+     "couleur": "#35495E",
+     "famille": "RN",
+     "bloc": "Extrême droite",
+     "sieges": 88,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO800532",
+     "abrev": "LIOT",
+     "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+     "couleur": "#F8D434",
+     "famille": "LIOT",
+     "bloc": "Non alignés",
+     "sieges": 22,
+     "debut": "2022-06-28",
+     "fin": "2024-06-09"
+    },
+    {
+     "id": "PO793087",
+     "abrev": "NI",
+     "nom": "Non inscrit",
+     "couleur": "#8D949A",
+     "famille": "NI",
+     "bloc": "Non alignés",
+     "sieges": 7,
+     "debut": "2022-06-22",
+     "fin": "2024-06-09"
+    }
+   ]
+  },
+  "XVII": {
+   "periode": "2024–",
+   "scrutins": 9402,
+   "ensemble": 227,
+   "votes_nominatifs": 1380289,
+   "groupes": [
+    {
+     "id": "PO845413",
+     "abrev": "LFI-NFP",
+     "nom": "La France insoumise - Nouveau Front Populaire",
+     "couleur": "#C00D0D",
+     "famille": "LFI",
+     "bloc": "Gauche",
+     "sieges": 70,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845514",
+     "abrev": "GDR",
+     "nom": "Gauche Démocrate et Républicaine",
+     "couleur": "#830E21",
+     "famille": "GDR",
+     "bloc": "Gauche",
+     "sieges": 17,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845439",
+     "abrev": "ECOS",
+     "nom": "Écologiste et Social",
+     "couleur": "#77AA79",
+     "famille": "ECO",
+     "bloc": "Gauche",
+     "sieges": 38,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845419",
+     "abrev": "SOC",
+     "nom": "Socialistes et apparentés",
+     "couleur": "#F5B4CE",
+     "famille": "PS",
+     "bloc": "Gauche",
+     "sieges": 68,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845407",
+     "abrev": "EPR",
+     "nom": "Ensemble pour la République",
+     "couleur": "#7B4591",
+     "famille": "REN",
+     "bloc": "Centre",
+     "sieges": 90,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845454",
+     "abrev": "DEM",
+     "nom": "Les Démocrates",
+     "couleur": "#F07E26",
+     "famille": "MODEM",
+     "bloc": "Centre",
+     "sieges": 37,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845470",
+     "abrev": "HOR",
+     "nom": "Horizons & Indépendants",
+     "couleur": "#B5E2F9",
+     "famille": "HOR",
+     "bloc": "Centre",
+     "sieges": 35,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845425",
+     "abrev": "DR",
+     "nom": "Droite Républicaine",
+     "couleur": "#8CB0DC",
+     "famille": "LR",
+     "bloc": "Droite",
+     "sieges": 47,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO845401",
+     "abrev": "RN",
+     "nom": "Rassemblement National",
+     "couleur": "#313567",
+     "famille": "RN",
+     "bloc": "Extrême droite",
+     "sieges": 121,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO872880",
+     "abrev": "UDDPLR",
+     "nom": "Union des droites pour la République",
+     "couleur": "#3367A7",
+     "famille": "UDR",
+     "bloc": "Extrême droite",
+     "sieges": 17,
+     "debut": "2025-09-05",
+     "fin": null
+    },
+    {
+     "id": "PO847173",
+     "abrev": "UDR",
+     "nom": "UDR",
+     "couleur": "#3367A7",
+     "famille": "UDR",
+     "bloc": "Extrême droite",
+     "sieges": 16,
+     "debut": "2024-09-12",
+     "fin": "2025-09-04"
+    },
+    {
+     "id": "PO845485",
+     "abrev": "LIOT",
+     "nom": "Libertés, Indépendants, Outre-mer et Territoires",
+     "couleur": "#FFD96F",
+     "famille": "LIOT",
+     "bloc": "Non alignés",
+     "sieges": 23,
+     "debut": "2024-07-18",
+     "fin": null
+    },
+    {
+     "id": "PO840056",
+     "abrev": "NI",
+     "nom": "Non inscrit",
+     "couleur": "#8D949A",
+     "famille": "NI",
+     "bloc": "Non alignés",
+     "sieges": 11,
+     "debut": "2024-07-01",
+     "fin": null
+    }
+   ]
+  }
+ },
+ "totaux": {
+  "scrutins": 19279,
+  "ensemble": 941,
+  "votes_nominatifs": 2630519
+ }
+}

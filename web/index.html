@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dura Lex · Vue d'ensemble</title>
+<link rel="stylesheet" href="assets/style.css">
+<script type="module" src="assets/overview.js"></script>
+</head>
+<body>
+<header class="site-header" data-active="index.html"></header>
+
+<main>
+  <section class="stack">
+    <h1>Qui vote quoi, et au profit de qui</h1>
+    <p class="lede">Les votes des députés depuis 2012, comparés au contenu des lois votées. Quels partis soutiennent les lois qui profitent aux ménages modestes, et lesquels celles qui profitent aux ménages aisés et aux entreprises ?</p>
+  </section>
+
+  <details class="card explainer" id="comprendre">
+    <summary><span class="explainer-title">Comprendre l'étude</span><span class="muted explainer-hint">D'où viennent les chiffres, comment les lire, ce qu'ils ne disent pas</span></summary>
+    <div class="explainer-body">
+      <section>
+        <h3>La question</h3>
+        <p>Quand un parti vote une loi, à qui profite-t-elle ? Les programmes et les discours ne suffisent pas pour répondre. Les votes, eux, sont publics et restent. Cette page rassemble tous les votes de l'Assemblée nationale depuis juin 2012 et les met en face du contenu de chaque loi.</p>
+      </section>
+
+      <section>
+        <h3>Les données</h3>
+        <p>Tout vient du site de données publiques de l'Assemblée nationale, data.assemblee-nationale.fr. On y trouve chaque scrutin public, avec le choix de chaque groupe de députés.</p>
+        <div class="tiles" id="tiles" aria-label="Chiffres clés"></div>
+        <p>Par défaut, seuls comptent les votes sur l'ensemble d'une loi. Voter un amendement ou un article ne dit pas si le parti soutient la loi entière. Pour chaque loi, on a aussi récupéré ses articles, l'exposé des motifs écrit par ses auteurs et, pour les projets du Gouvernement, l'étude d'impact.</p>
+        <p>Les votes à main levée ne laissent aucune trace nominative. Ils n'apparaissent donc nulle part, et pas ici non plus.</p>
+      </section>
+
+      <section>
+        <h3>Comment chaque loi est classée</h3>
+        <p>Lire près de mille lois à la main prendrait des mois. Le classement est confié à trois intelligences artificielles de trois entreprises différentes : DeepSeek en Chine, Mistral en France et Google aux États-Unis. Chacune lit la loi et dit de quoi elle parle, dans quel sens elle va, et qui y gagne de l'argent.</p>
+        <p>On compare ensuite les trois réponses. Si au moins deux sont d'accord, on retient leur avis. Sinon, la loi est classée « incertaine » et ne compte pas. Les trois sont d'accord sur <b id="c-unanimes">la moitié</b> des lois.</p>
+        <p>Les intelligences artificielles ne voient jamais les votes. On efface aussi les noms des députés et des partis, la date, et la mention qui dirait si la loi vient du Gouvernement ou des députés. Elles jugent donc le contenu, pas le camp qui le porte. Elles peuvent quand même reconnaître une loi très connue, comme la réforme des retraites de 2023.</p>
+        <p>Personne ne relit les classements un par un. En revanche, la fiche de chaque scrutin affiche l'avis de chaque intelligence artificielle et ses raisons. Chacun peut vérifier.</p>
+      </section>
+
+      <section>
+        <h3>L'indice redistributif</h3>
+        <p>Parmi les lois qui déplacent de l'argent, on distingue deux camps.</p>
+        <ul>
+          <li>Celles qui profitent directement aux ménages modestes. Par exemple, une aide sociale augmentée, un impôt plus lourd sur les hauts revenus, des loyers encadrés.</li>
+          <li>Celles qui profitent directement aux ménages aisés ou aux entreprises. Par exemple, un impôt sur le patrimoine réduit, des cotisations patronales baissées, une aide aux entreprises.</li>
+        </ul>
+        <p>Pour chaque parti, on regarde combien de fois il a voté pour dans chaque camp. L'indice est l'écart entre les deux. Un parti qui vote 80 % des lois du premier camp et 30 % des lois du second obtient +50. À +100, il vote toutes les lois favorables aux modestes et aucune des autres. À −100, c'est l'inverse. Près de zéro, il ne fait pas de différence nette entre les deux.</p>
+        <p>Seul compte l'effet direct, c'est-à-dire qui reçoit ou paie de l'argent du fait même de la loi. Une baisse de cotisations patronales compte comme favorable aux entreprises, même si son but affiché est de créer des emplois. Les effets sur l'emploi ou sur les prix existent, mais les économistes en débattent et chaque camp cite les études qui l'arrangent.</p>
+        <p>Deux sortes de lois sont mises de côté. Les budgets annuels, d'abord, parce que les partis les votent surtout selon qu'ils soutiennent le Gouvernement ou non. Ensuite, les lois adoptées presque à l'unanimité, qui ne départagent personne.</p>
+      </section>
+
+      <section>
+        <h3>Savoir si un chiffre est solide</h3>
+        <p>Un indice calculé sur dix lois est fragile. Une seule loi classée autrement peut le déplacer de dix points. Chaque valeur porte donc une marge, le trait fin sur la barre, avec le nombre de lois sur lequel elle repose. La valeur réelle a toutes les chances de se trouver dans cette marge. Quand la marge passe des deux côtés de zéro, on ne peut pas dire de quel côté penche le parti.</p>
+        <p>Un résultat peut aussi dépendre des règles choisies. Le tableau « Le résultat change-t-il selon la méthode ? » refait le calcul avec d'autres règles, par exemple en gardant les budgets. Un parti marqué « Solide » penche du même côté quelle que soit la règle.</p>
+        <p>Les règles de calcul ont été fixées avant le dernier classement. Elles ne changent pas quand un résultat surprend.</p>
+      </section>
+
+      <section>
+        <h3>Ce que l'étude ne dit pas</h3>
+        <ul>
+          <li>Un parti qui soutient le Gouvernement vote presque toutes ses lois, quel que soit leur contenu. Renaissance, le MoDem et Horizons ont toujours soutenu le Gouvernement depuis 2017. Pour eux, on ne peut pas séparer leurs idées de ce soutien.</li>
+          <li>Un vote ne dit pas pourquoi. Un parti peut voter contre une loi favorable aux modestes parce qu'il la juge insuffisante.</li>
+          <li>Les amendements ne sont pas comptés, alors qu'une bonne partie des batailles sur les impôts et les aides s'y joue.</li>
+          <li>Chaque loi pèse autant, qu'elle soit mineure ou qu'il s'agisse d'une réforme des retraites.</li>
+          <li>Les partis n'ont pas siégé aux mêmes périodes. Le RN n'a un groupe que depuis 2022. Pour comparer des partis sur les mêmes lois, choisissez-les dans le sélecteur.</li>
+          <li>Les intelligences artificielles ont leurs propres biais. En combiner trois en atténue certains, sans garantie.</li>
+          <li>Les blocs (gauche, centre, droite, extrême droite) reprennent le classement du ministère de l'Intérieur. Il est contesté, notamment par les partis concernés. Le mode « Partis » donne le détail.</li>
+        </ul>
+        <p class="muted">Le détail technique de la méthode et les règles figées sont décrits dans le fichier README du projet et dans <code>config/protocole.json</code>.</p>
+      </section>
+    </div>
+  </details>
+
+  <section class="card filters" aria-label="Filtres">
+    <div class="field" style="flex-basis:100%">
+      <span class="field-label" id="lbl-compare">Comparer : touchez deux <span id="compare-unit">blocs</span> ou plus pour ne garder que les lois votées par chacun</span>
+      <div class="toggles" role="group" aria-labelledby="lbl-compare" id="f-compare"></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+        <button type="button" class="btn" id="compare-reset" hidden>Tout afficher</button>
+        <span class="muted" id="compare-hint" style="font-size:13px"></span>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="lbl-mode">Regrouper par</span>
+      <div class="segmented" role="group" aria-labelledby="lbl-mode" id="f-mode">
+        <button type="button" data-mode="blocs" aria-pressed="true">Blocs</button>
+        <button type="button" data-mode="partis" aria-pressed="false">Partis</button>
+        <button type="button" data-mode="groupes" aria-pressed="false">Groupes</button>
+      </div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="lbl-leg">Période</span>
+      <div class="segmented" role="group" aria-labelledby="lbl-leg" id="f-leg"></div>
+    </div>
+    <details class="more-filters">
+      <summary>Plus de filtres</summary>
+      <div class="more-filters-body">
+        <div class="field">
+          <label for="f-kind">Type de vote</label>
+          <select id="f-kind">
+            <option value="ensemble">Votes sur l'ensemble d'une loi</option>
+            <option value="censure">Motions de censure</option>
+            <option value="procedure">Motions de procédure</option>
+            <option value="article">Articles</option>
+            <option value="amendement">Amendements</option>
+            <option value="">Tous les scrutins</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-origin">Origine de la loi</label>
+          <select id="f-origin">
+            <option value="">Toutes</option>
+            <option value="gouvernement">Projets du Gouvernement</option>
+            <option value="parlementaire">Propositions de députés</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-statut">Le parti soutenait-il le Gouvernement ?</label>
+          <select id="f-statut">
+            <option value="">Peu importe</option>
+            <option value="majorite">Oui, il était dans la majorité</option>
+            <option value="opposition">Non, il était dans l'opposition</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-clivant">Lois</label>
+          <select id="f-clivant">
+            <option value="0">Toutes</option>
+            <option value="1">Seulement les lois disputées</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-conf">Classements retenus</label>
+          <select id="f-conf">
+            <option value="faible">Tous</option>
+            <option value="moyenne">Assez sûrs ou très sûrs</option>
+            <option value="élevée">Très sûrs seulement</option>
+          </select>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="card stack" id="indice">
+    <div class="stack" style="gap:6px">
+      <h2>Indice redistributif</h2>
+      <p>Les <span class="ix-unit">blocs</span> votent-ils plutôt les lois favorables aux ménages modestes, ou celles favorables aux ménages aisés et aux entreprises ?</p>
+      <p class="muted" id="index-caption"></p>
+    </div>
+    <div>
+      <div class="ix-head" aria-hidden="true">
+        <span style="color:var(--aises-ink)">← Plutôt aisés et entreprises</span>
+        <span style="color:var(--modestes-ink)">Plutôt ménages modestes →</span>
+      </div>
+      <div id="index"></div>
+    </div>
+    <details class="sens-details">
+      <summary>Le résultat change-t-il selon la méthode ?</summary>
+      <div class="stack" style="gap:12px;margin-top:12px">
+        <p class="muted">Le même indice, recalculé avec d'autres règles. Sous chaque valeur, sa marge. « Solide » : le <span class="ix-unit-sg">bloc</span> penche du même côté quelle que soit la règle. « Pas de tendance nette » : la marge passe des deux côtés de zéro. « Dépend de la méthode » : le résultat change selon la règle choisie.</p>
+        <div class="scroll-x">
+          <table class="data stack-mobile sens-table">
+            <thead id="sens-head"></thead>
+            <tbody id="sens-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="stack">
+    <div class="head-row">
+      <div class="stack" style="gap:4px">
+        <h2>Positions des <span id="unit-plural">partis</span></h2>
+        <p class="muted" id="pos-caption"></p>
+      </div>
+      <div class="key" aria-hidden="true">
+        <span><i style="background:var(--vote-pour)"></i>Pour</span>
+        <span><i style="background:var(--vote-contre)"></i>Contre</span>
+        <span><i style="background:var(--abst)"></i>Abstention</span>
+      </div>
+    </div>
+    <div class="card flush scroll-x">
+      <table class="data stack-mobile">
+        <thead><tr>
+          <th scope="col" id="pos-unit">Groupe</th>
+          <th scope="col" style="width:45%">Répartition des positions majoritaires</th>
+          <th scope="col" class="num">Pour</th>
+          <th scope="col" class="num">Contre</th>
+          <th scope="col" class="num">Abst.</th>
+          <th scope="col" class="num">Scrutins</th>
+        </tr></thead>
+        <tbody id="positions"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="stack" style="gap:4px">
+      <h2>Dans la majorité, dans l'opposition</h2>
+      <p class="muted" id="discipline-caption"></p>
+    </div>
+    <div class="card flush scroll-x">
+      <table class="data stack-mobile">
+        <thead><tr>
+          <th scope="col" id="discipline-unit">Parti</th>
+          <th scope="col" class="num">« Pour » dans la majorité</th>
+          <th scope="col" class="num">« Pour » dans l'opposition</th>
+          <th scope="col" class="num">Écart (points)</th>
+        </tr></thead>
+        <tbody id="discipline"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="head-row">
+      <div class="stack" style="gap:4px">
+        <h2>Vote « <span id="heat-metric">pour</span> » les textes orientés vers le pôle <span id="heat-pole">A</span></h2>
+        <p class="muted" id="heat-caption"></p>
+      </div>
+      <div class="stack" style="gap:10px;align-items:flex-end">
+        <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end">
+          <div class="segmented" role="group" aria-label="Vote mesuré" id="f-metric">
+            <button type="button" data-metric="p" aria-pressed="true">Pour</button>
+            <button type="button" data-metric="c" aria-pressed="false">Contre</button>
+          </div>
+          <div class="segmented" role="group" aria-label="Orientation des textes" id="f-pole">
+            <button type="button" data-pole="0" aria-pressed="true">Pôle A</button>
+            <button type="button" data-pole="1" aria-pressed="false">Pôle B</button>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="f-unique"> Textes à thème unique</label>
+        <div class="legend-ramp" aria-hidden="true"><span id="ramp-min">0 % pour</span><span class="ramp" id="ramp"></span><span id="ramp-max">100 % pour</span></div>
+      </div>
+    </div>
+    <p class="scroll-hint">Faites défiler le tableau horizontalement pour voir tous les thèmes.</p>
+    <div class="card flush scroll-x"><table class="heat" id="heat"></table></div>
+    <div class="card stack" id="heat-detail" hidden aria-live="polite" style="gap:14px"></div>
+  </section>
+
+  <section class="stack">
+    <h2>Derniers votes solennels sur un texte</h2>
+    <div class="card flush scroll-x">
+      <table class="data stack-mobile">
+        <thead><tr><th scope="col">Date</th><th scope="col">Texte</th><th scope="col">Thèmes</th><th scope="col" class="num">Pour / contre</th><th scope="col">Effet estimé</th></tr></thead>
+        <tbody id="recent"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="footer"></footer>
+</main>
+</body>
+</html>

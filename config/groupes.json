@@ -1,0 +1,208 @@
+{
+  "_commentaire": "Regroupement éditorial. Chaque famille politique réunit les groupes parlementaires (identifiants d'organe PO...) qui se sont succédé d'une législature à l'autre, et appartient à un bloc. « couleurs » donne une couleur de repli aux groupes pour lesquels l'open data n'en fournit pas. Les blocs suivent la convention du nuancier du ministère de l'Intérieur et de la science politique française : RN et UDR dans un bloc « Extrême droite », LFI dans le bloc « Gauche ». Cette convention est discutée ; le regroupement par partis, affiché par défaut, n'en dépend pas.",
+  "blocs": [
+    {
+      "id": "Gauche",
+      "couleur": "#B4232A"
+    },
+    {
+      "id": "Centre",
+      "couleur": "#E2A33B"
+    },
+    {
+      "id": "Droite",
+      "couleur": "#5B86C4"
+    },
+    {
+      "id": "Extrême droite",
+      "couleur": "#26295A"
+    },
+    {
+      "id": "Non alignés",
+      "couleur": "#8D949A"
+    }
+  ],
+  "familles": [
+    {
+      "id": "LFI",
+      "nom": "La France insoumise",
+      "bloc": "Gauche",
+      "couleur": "#C00D0D",
+      "groupes": [
+        "PO730958",
+        "PO800490",
+        "PO845413"
+      ]
+    },
+    {
+      "id": "GDR",
+      "nom": "Gauche démocrate et républicaine",
+      "bloc": "Gauche",
+      "couleur": "#A41914",
+      "groupes": [
+        "PO656018",
+        "PO730940",
+        "PO800502",
+        "PO845514"
+      ]
+    },
+    {
+      "id": "ECO",
+      "nom": "Écologistes",
+      "bloc": "Gauche",
+      "couleur": "#77AA79",
+      "groupes": [
+        "PO656014",
+        "PO771789",
+        "PO800526",
+        "PO845439"
+      ]
+    },
+    {
+      "id": "PS",
+      "nom": "Socialistes",
+      "bloc": "Gauche",
+      "couleur": "#E26BA8",
+      "groupes": [
+        "PO656002",
+        "PO713077",
+        "PO730946",
+        "PO758835",
+        "PO800496",
+        "PO830170",
+        "PO845419"
+      ]
+    },
+    {
+      "id": "RRDP",
+      "nom": "Radicaux de gauche",
+      "bloc": "Gauche",
+      "couleur": "#E8B04B",
+      "groupes": [
+        "PO656022"
+      ]
+    },
+    {
+      "id": "REN",
+      "nom": "Renaissance (LREM, RE, EPR)",
+      "bloc": "Centre",
+      "couleur": "#7B4591",
+      "groupes": [
+        "PO730964",
+        "PO800538",
+        "PO845407"
+      ]
+    },
+    {
+      "id": "MODEM",
+      "nom": "MoDem",
+      "bloc": "Centre",
+      "couleur": "#F07E26",
+      "groupes": [
+        "PO730970",
+        "PO774834",
+        "PO800484",
+        "PO845454"
+      ]
+    },
+    {
+      "id": "HOR",
+      "nom": "Horizons et Agir",
+      "bloc": "Centre",
+      "couleur": "#32B3CA",
+      "groupes": [
+        "PO771923",
+        "PO800514",
+        "PO845470"
+      ]
+    },
+    {
+      "id": "UDI",
+      "nom": "UDI et centristes",
+      "bloc": "Centre",
+      "couleur": "#94B7E1",
+      "groupes": [
+        "PO656010",
+        "PO730952",
+        "PO744425",
+        "PO765636",
+        "PO767217",
+        "PO771889"
+      ]
+    },
+    {
+      "id": "LR",
+      "nom": "Les Républicains (UMP, LR, DR)",
+      "bloc": "Droite",
+      "couleur": "#2B4C9B",
+      "groupes": [
+        "PO656006",
+        "PO684957",
+        "PO707869",
+        "PO730934",
+        "PO800508",
+        "PO845425"
+      ]
+    },
+    {
+      "id": "RN",
+      "nom": "Rassemblement national",
+      "bloc": "Extrême droite",
+      "couleur": "#313567",
+      "groupes": [
+        "PO800520",
+        "PO845401"
+      ]
+    },
+    {
+      "id": "UDR",
+      "nom": "Union des droites (AD, UDR)",
+      "bloc": "Extrême droite",
+      "couleur": "#3367A7",
+      "groupes": [
+        "PO845520",
+        "PO847173",
+        "PO872880"
+      ]
+    },
+    {
+      "id": "LIOT",
+      "nom": "LIOT et Libertés et territoires",
+      "bloc": "Non alignés",
+      "couleur": "#E5BE3C",
+      "groupes": [
+        "PO759900",
+        "PO800532",
+        "PO845485"
+      ]
+    },
+    {
+      "id": "NI",
+      "nom": "Non inscrits",
+      "bloc": "Non alignés",
+      "couleur": "#8D949A",
+      "groupes": [
+        "PO645633",
+        "PO723569",
+        "PO793087",
+        "PO840056"
+      ]
+    }
+  ],
+  "couleurs": {
+    "PO656002": "#D46CA9",
+    "PO713077": "#D46CA9",
+    "PO730946": "#D46CA9",
+    "PO656014": "#77AA79",
+    "PO656018": "#A41914",
+    "PO656022": "#E8B04B",
+    "PO656010": "#94B7E1",
+    "PO730952": "#94B7E1",
+    "PO744425": "#94B7E1",
+    "PO765636": "#94B7E1",
+    "PO656006": "#2B4C9B",
+    "PO684957": "#2B4C9B",
+    "PO707869": "#2B4C9B",
+    "PO645633": "#8D949A"
+  }
+}

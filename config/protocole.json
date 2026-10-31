@@ -1,0 +1,26 @@
+{
+  "_commentaire": "Choix de méthode fixés avant le classement et le calcul des résultats. Ne pas les modifier pour corriger un résultat qui surprend : une variante se présente dans le tableau de sensibilité, pas à la place du protocole. Toute modification change la version et est notée dans le README.",
+  "version": 4,
+  "fixe_le": "2026-10-31",
+  "classement": {
+    "modeles": [
+      "openrouter/deepseek/deepseek-v4.1-flash",
+      "openrouter/mistralai/mistral-small-2603",
+      "openrouter/google/gemini-3.5-flash-lite"
+    ],
+    "passages_par_modele": 1,
+    "agregation": "Effet retenu s'il est proposé par une majorité stricte des modèles, sinon « incertain ». Thème retenu s'il est proposé par une majorité des modèles, avec le pôle majoritaire, sinon « mixte ».",
+    "anonymisation": "Noms de personnes, noms de groupes et de partis, nature du texte (projet ou proposition) et date masqués avant l'envoi au modèle."
+  },
+  "indice": {
+    "textes_clivants_uniquement": true,
+    "seuil_clivant": 0.25,
+    "budgets": false,
+    "effets_progressifs": ["modestes"],
+    "effets_regressifs": ["aises", "entreprises"],
+    "confiance_minimale": "faible",
+    "textes_minimum": 5,
+    "reechantillonnages": 1000,
+    "niveau_intervalle": 0.95
+  }
+}
