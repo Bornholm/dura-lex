@@ -90,7 +90,7 @@ python3 -I scripts/classify.py --force --workers 4          # tout reclasser
 - **Sensibilité** : le tableau « Sensibilité » recalcule l'indice avec les budgets, avec tous les textes, sans les textes `entreprises`, avec les seuls textes classés à l'unanimité des modèles, et sur les seuls votes émis dans l'opposition. Un parti est dit « robuste » quand, dans toutes les variantes calculables, l'intervalle reste du même côté de zéro.
 - **Texte clivant** : le camp minoritaire (contre et abstentions, ou pour) réunit au moins 25 % des suffrages exprimés.
 - **Effet redistributif** : `modestes` (progressif), `aises` (régressif), `entreprises`, `neutre`, `ambivalent`, `incertain`. Convention : on classe l'effet direct (qui reçoit ou paie de l'argent du fait même des mesures), pas les effets indirects attendus sur l'emploi, l'investissement ou l'offre, qui sont discutés. La convention s'applique dans les deux sens : baisse d'une prestation sous condition de ressources `aises` quel que soit le public visé, baisse de cotisations patronales `entreprises` même si l'objectif affiché est l'emploi, encadrement d'un loyer `modestes`.
-- **Blocs** : convention du nuancier du ministère de l'Intérieur (RN et UDR en « Extrême droite », LFI en « Gauche »). Elle est discutée ; la vue par partis, affichée par défaut, n'en dépend pas.
+- **Blocs** : nuancier le plus récent du ministère de l'Intérieur (circulaire du 2 février 2026, validée par le Conseil d'État le 27 février 2026) : LFI en « Extrême gauche », RN et UDR en « Extrême droite ». Ce classement est appliqué à toute la période, alors que l'Intérieur plaçait LFI à gauche avant 2026. Il est contesté par les partis concernés ; la vue par partis n'en dépend pas.
 
 ## Protocole et limites
 
@@ -130,3 +130,8 @@ Limites connues, non corrigées :
   }
 }
 ```
+
+## Licences
+
+- Code (scripts, site, configuration) : licence MIT, voir `LICENSE`.
+- Données publiées dans `web/data/` (votes et classements) : Licence Ouverte / Open Licence 2.0 d'Etalab, voir `LICENCE-DONNEES.md`. Les votes viennent de l'open data de l'Assemblée nationale, diffusé sous la même licence. Les classements sont produits automatiquement par des modèles de langage et peuvent contenir des erreurs.

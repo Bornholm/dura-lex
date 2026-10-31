@@ -2,6 +2,10 @@
  "extrait_le": "2026-10-31",
  "blocs": [
   {
+   "id": "Extrême gauche",
+   "couleur": "#7A0A0A"
+  },
+  {
    "id": "Gauche",
    "couleur": "#B4232A"
   },
@@ -26,7 +30,7 @@
   {
    "id": "LFI",
    "nom": "La France insoumise",
-   "bloc": "Gauche",
+   "bloc": "Extrême gauche",
    "couleur": "#C00D0D"
   },
   {
@@ -504,7 +508,7 @@
      "nom": "La France insoumise",
      "couleur": "#ED302C",
      "famille": "LFI",
-     "bloc": "Gauche",
+     "bloc": "Extrême gauche",
      "sieges": 17,
      "debut": "2017-06-27",
      "fin": "2022-06-21"
@@ -699,7 +703,7 @@
      "nom": "La France insoumise - Nouvelle Union Populaire écologique et sociale",
      "couleur": "#E42313",
      "famille": "LFI",
-     "bloc": "Gauche",
+     "bloc": "Extrême gauche",
      "sieges": 75,
      "debut": "2022-06-28",
      "fin": "2024-06-09"
@@ -839,7 +843,7 @@
      "nom": "La France insoumise - Nouveau Front Populaire",
      "couleur": "#C00D0D",
      "famille": "LFI",
-     "bloc": "Gauche",
+     "bloc": "Extrême gauche",
      "sieges": 70,
      "debut": "2024-07-18",
      "fin": null

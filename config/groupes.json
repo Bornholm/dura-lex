@@ -1,6 +1,10 @@
 {
-  "_commentaire": "Regroupement éditorial. Chaque famille politique réunit les groupes parlementaires (identifiants d'organe PO...) qui se sont succédé d'une législature à l'autre, et appartient à un bloc. « couleurs » donne une couleur de repli aux groupes pour lesquels l'open data n'en fournit pas. Les blocs suivent la convention du nuancier du ministère de l'Intérieur et de la science politique française : RN et UDR dans un bloc « Extrême droite », LFI dans le bloc « Gauche ». Cette convention est discutée ; le regroupement par partis, affiché par défaut, n'en dépend pas.",
+  "_commentaire": "Regroupement éditorial. Chaque famille politique réunit les groupes parlementaires (identifiants d'organe PO...) qui se sont succédé d'une législature à l'autre, et appartient à un bloc. « couleurs » donne une couleur de repli aux groupes pour lesquels l'open data n'en fournit pas. Les blocs suivent le nuancier du ministère de l'Intérieur dans sa version la plus récente (circulaire du 2 février 2026 pour les municipales, validée par le Conseil d'État le 27 février 2026, n° 512694) : LFI dans un bloc « Extrême gauche », RN et UDR dans un bloc « Extrême droite ». Avant 2026, l'Intérieur classait LFI à gauche. Le classement le plus récent est appliqué à toute la période, comme pour le RN. Cette convention est contestée par les partis concernés ; la vue par partis n'en dépend pas.",
   "blocs": [
+    {
+      "id": "Extrême gauche",
+      "couleur": "#7A0A0A"
+    },
     {
       "id": "Gauche",
       "couleur": "#B4232A"
@@ -26,7 +30,7 @@
     {
       "id": "LFI",
       "nom": "La France insoumise",
-      "bloc": "Gauche",
+      "bloc": "Extrême gauche",
       "couleur": "#C00D0D",
       "groupes": [
         "PO730958",

@@ -397,7 +397,7 @@ function renderStatic() {
   document.getElementById("tiles").innerHTML = tiles.map(([k, v, s]) =>
     `<div class="tile"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span><span class="s">${esc(s)}</span></div>`).join("");
   document.getElementById("footer").innerHTML =
-    `<span>Source : open data de l'Assemblée nationale (data.assemblee-nationale.fr).</span><span>Données extraites le ${fmtDate(meta.extrait_le)}.</span>`;
+    `<span>Source : open data de l'Assemblée nationale (data.assemblee-nationale.fr). Code sous licence MIT, données sous Licence Ouverte 2.0.</span><span>Données extraites le ${fmtDate(meta.extrait_le)}.</span>`;
 }
 
 async function render() {
