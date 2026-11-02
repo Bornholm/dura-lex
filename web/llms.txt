@@ -1,0 +1,31 @@
+# Dura Lex
+
+> Qui vote quoi à l'Assemblée nationale, et au profit de qui. Analyse des scrutins publics de 2012 à 2026 (XIVe à XVIIe législature) à partir de l'open data de l'Assemblée. Chaque loi est classée par trois modèles de langue (thèmes, orientation, effet redistributif direct), sans relecture humaine. Un indice redistributif compare, pour chaque parti et chaque bloc, son taux de vote « pour » sur les lois progressives et sur les lois régressives ou favorables aux entreprises.
+
+Contenu en français. Code sous licence MIT, données sous Licence Ouverte 2.0. Les classements sont produits par des IA et peuvent contenir des erreurs. Les blocs reprennent le nuancier du ministère de l'Intérieur de février 2026 (LFI en extrême gauche), qui est contesté.
+
+## Documentation
+
+- [Synthèse de l'étude](https://bornholm.github.io/dura-lex/synthese.md) : question, données, classement par IA, indice, sensibilité, résultats, limites. C'est le point d'entrée pour discuter de l'étude.
+- [README](https://raw.githubusercontent.com/Bornholm/dura-lex/main/README.md) : installation, scripts, méthode détaillée, historique du protocole
+- [Tableau de bord](https://bornholm.github.io/dura-lex/) : site interactif (JavaScript requis)
+
+## Méthode
+
+- [Protocole](https://raw.githubusercontent.com/Bornholm/dura-lex/main/config/protocole.json) : paramètres figés (modèles, agrégation, règles de l'indice)
+- [Consignes de classement](https://raw.githubusercontent.com/Bornholm/dura-lex/main/config/prompt_classement.md) : prompt envoyé aux modèles
+- [Thèmes et effets](https://raw.githubusercontent.com/Bornholm/dura-lex/main/config/themes.json) : dix thèmes à deux pôles, six catégories d'effet redistributif
+- [Partis et blocs](https://raw.githubusercontent.com/Bornholm/dura-lex/main/config/groupes.json) : rattachement des groupes parlementaires
+- [Majorités](https://raw.githubusercontent.com/Bornholm/dura-lex/main/config/majorites.json) : partis de la majorité par période
+
+## Données
+
+- [Classements](https://bornholm.github.io/dura-lex/data/classements.json) : un objet par vote sur l'ensemble d'un texte (941), avec thèmes, effet, confiance, accord entre modèles, résumé et justification
+- [Métadonnées](https://bornholm.github.io/dura-lex/data/meta.json) : partis, blocs, thèmes, majorités, totaux, protocole
+- [Votes de la XVIIe législature](https://bornholm.github.io/dura-lex/data/votes/XVII.json) : un objet par scrutin, avec la position et le décompte de chaque groupe. Même format pour XIV, XV et XVI.
+
+## Optional
+
+- [Calcul de l'indice](https://raw.githubusercontent.com/Bornholm/dura-lex/main/web/assets/overview.js) : indice, bootstrap et variantes, calculés dans le navigateur
+- [Script de classement](https://raw.githubusercontent.com/Bornholm/dura-lex/main/scripts/classify.py) : appel des modèles, anonymisation, agrégation
+- [Licence des données](https://raw.githubusercontent.com/Bornholm/dura-lex/main/LICENCE-DONNEES.md)
